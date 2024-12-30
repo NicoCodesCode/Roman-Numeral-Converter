@@ -1,0 +1,103 @@
+:root {
+  --color1: #495867;
+  --color2: #577399;
+  --color3: #bdd5ea;
+  --color4: #f7f7ff;
+  --color5: #fe5f55;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Utility */
+
+.text-center {
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.smooth {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px var(--color1);
+}
+
+p.error {
+  color: var(--color5);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Body Style */
+
+body {
+  font-family: Verdana, sans-serif;
+  background-color: var(--color4);
+  color: var(--color1);
+}
+
+/* Header Style */
+
+header {
+  background-color: var(--color2);
+  color: var(--color4);
+  padding: 10px;
+  box-shadow: 0 2px 7px var(--color1);
+}
+
+/* Main Style */
+
+main {
+  padding: 2rem;
+  font-size: 1.2rem;
+  width: clamp(250px, 80vw, 500px);
+  height: 70vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.number-input {
+  width: 105px;
+  height: 40px;
+  outline: none;
+  font-size: 1.5rem;
+  color: var(--color1);
+  padding: 5px 10px;
+}
+
+.convert-btn {
+  width: 210px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: var(--color5);
+  color: var(--color4);
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.output-text {
+  font-size: 2rem;
+}
+
+/* Animations */
+
+.convert-btn:active {
+  transform: scale(1.05);
+}
